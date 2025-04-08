@@ -3,12 +3,12 @@
 import type { LibraryRegistry } from "@vertigis/web/config";
 
 // EagleView Imports
-import EagleView, { EagleViewModel } from "./components/EagleViewAPIMethod"; 
+import EagleView, { EagleViewModel } from "./components/EagleViewEmbeddedExplorer"; 
 import {
     applyEVSettings,
     getEVSettings,
     getPictSettingsSchema,
-} from "./components/EagleViewAPIMethod/designer";
+} from "./components/EagleViewEmbeddedExplorer/designer";
 import invLanguage from "../src/locale/inv.json";
 
 const LAYOUT_NAMESPACE = "custom.c439ef1a";
