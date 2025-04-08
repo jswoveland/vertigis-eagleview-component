@@ -1,0 +1,26 @@
+{
+    "name": "vertigis-studio-web-project",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "license": "UNLICENSED",
+    "author": "",
+    "type": "commonjs",
+    "scripts": {
+        "build": "vertigis-web-sdk build",
+        "start": "vertigis-web-sdk start",
+        "upgrade": "vertigis-web-sdk upgrade",
+        "prettier": "prettier --write \"**/*.json\" \"**/*.js\" \"**/*.ts\" \"**/*.tsx\""
+    },
+    "devDependencies": {
+        "@types/lodash-es": "^4.17.12",
+        "@vertigis/web": "5.29.0",
+        "@vertigis/web-sdk": "1.10.0",
+        "prettier": "^3.3.1",
+        "typescript": ">=4.7.4 <5.4.0"
+    },
+    "overrides": {
+        "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz"
+    },
+    "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

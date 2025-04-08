@@ -1,0 +1,8 @@
+{
+    "extends": "@vertigis/web-sdk/config/tsconfig.json",
+    "compilerOptions": {
+        "jsx": "react",
+        "baseUrl": "."
+    },
+    "include": [".eslintrc.js", "src"]
+}

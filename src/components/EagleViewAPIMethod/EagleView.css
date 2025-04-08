@@ -1,0 +1,41 @@
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+#status {
+    height:100%;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-party-map-controls {
+    position: absolute;
+    top: 1.5rem;
+    right: 6rem;
+    background-color: var(--buttonBackground);
+    opacity: 0.8;
+    z-index: 9;
+}
+
+.third-party-map-controls:hover {
+    opacity: 1;
+}
+
+.third-party-map-controls button {
+    border-radius: inherit;
+}
+
+.third-party-map-controls svg {
+    fill: var(--buttonIcon);
+}
+
+.third-party-map-controls button.selected {
+    background-color: var(--emphasizedButtonBackground);
+}
+
+.third-party-map-controls button.selected svg {
+    fill: var(--emphasizedButtonIcon);
+}
