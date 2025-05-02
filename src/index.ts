@@ -17,19 +17,19 @@ export default function (registry: LibraryRegistry): void {
     //Pictometry EagleView
     registry.registerComponent({
         category: "map",
-        name: "eagle-view",
+        name: "eagleview",
         namespace: LAYOUT_NAMESPACE,
         getComponentType: () => EagleView,
         getDesignerSettings: (args) => getEVSettings(args),
         applyDesignerSettings: (args) => applyEVSettings(args),
         getDesignerSettingsSchema: (args) => getPictSettingsSchema(args),
-        itemType: "eagle-view",
-        title: "language-designer-eagle-view-title",
+        itemType: "eagleview",
+        title: "language-designer-eagleview-title",
         iconId: "map-3rd-party",
     });
     registry.registerModel({
         getModel: (config) => new EagleViewModel(config),
-        itemType: "eagle-view",
+        itemType: "eagleview",
     });
     registry.registerLanguageResources({
         locale: "inv",
