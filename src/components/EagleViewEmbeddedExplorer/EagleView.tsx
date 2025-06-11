@@ -59,7 +59,7 @@ export default function EagleView(props: LayoutElementProperties<EagleViewModel>
         s.src = url;
         s.type = "application/javascript";
         s.crossOrigin = "anonymous|use-credentials";
-        s.async = true;
+        s.async = false;
         return s;
     };
 
@@ -128,7 +128,7 @@ export default function EagleView(props: LayoutElementProperties<EagleViewModel>
             ev.current.destroy();
         }
 
-        ev.current = new hostElement.ownerDocument.defaultView.ev.EmbeddedExplorer();
+        ev.current = hostElement.ownerDocument.defaultView.ev ? new hostElement.ownerDocument.defaultView.ev.EmbeddedExplorer() : new window.ev.EmbeddedExplorer();
         model.e3 = ev.current.mount("eagle-view-map", { apiKey: model.apiKey, view });
     };
 

@@ -1,0 +1,23 @@
+{
+    "name": "IV-Widget",
+    "label": "EagleView Imagery",
+    "type": "widget",
+    "version": "1.15.0",
+    "exbVersion": "1.15.0",
+    "author": "Eagleview",
+    "description": "This is custom widget which wraps Integrated Explorer allows users to view high quality imagery",
+    "dependencies": [
+      "https://cdn.jsdelivr.net/npm/recharts@2.12.7/umd/Recharts.min.js",
+      "https://cdn.jsdelivr.net/npm/react-virtualized@9.22.5/dist/umd/react-virtualized.min.js"
+    ],
+    "copyright": "",
+    "license": "http://www.apache.org/licenses/LICENSE-2.0",
+    "properties": {},
+    "translatedLocales": [
+      "en"
+    ],
+    "defaultSize": {
+      "width": 800,
+      "height": 500
+    }
+  }
