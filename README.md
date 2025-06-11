@@ -9,6 +9,10 @@ Open app/app.json and search for "apiKey", and update the value to an EagleView 
 
 In the project directory, you can run:
 
+### `npm install`
+
+Downloads project dependencies. YOU MUST DO THIS PRIOR TO THE FOLLOWING.
+
 ### `npm start`
 
 Runs the project in development mode. Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
