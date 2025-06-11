@@ -1,5 +1,10 @@
 This project was bootstrapped with the [VertiGIS Studio Web SDK](https://github.com/vertigis/vertigis-web-sdk).
 
+## IMPORTANT Update EagleView API Key ##
+
+Prior to running the app, you must update the EagleView API key set in the app/app.json file.
+Open app/app.json and search for "apiKey", and update the value to an EagleView API that works for "http://localhost:3001/"
+
 ## Available Scripts
 
 In the project directory, you can run:
