@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "title": "EagleView thing",
+  "title": "EagleView E3 Dev Viewer",
   "items": [
     {
       "id": "default",
@@ -2167,7 +2167,7 @@
         "language-designer-gen-upload-file-config-title": "Guided Add Layer from File",
         "language-designer-gen-upload-file-config-menuitemdescription": "Review, adjust, and configure file data.",
         "language-designer-gen-text-config-title": "Home",
-        "language-designer-gen-text-config-text": "\n\n# Capital City\n### Welcome to Capital City and VertiGIS Studio Web.\n-----\n### Here are some things to try:\n- Zoom in on the map to see some of the infrastructure located within Capital City.\n- Click on map features to view their attributes, related records, and attachments.\n- Use the identify tool to capture a variety of data within a specified area.\n- Try using the search box to find map data within the visible extent by keywords such as 'restaurant'.\n- Toggle the map into 3D mode to experience the data at a whole new level.\n\n ![VertiGIS Studio logo](https://www.arcgis.com/sharing/rest/content/items/176b1e8474dd4fc0a4672e256459861b/data)",
+        "language-designer-gen-text-config-text": "\n\n# EagleView Embedded Explorer \n### Development Viewer. Not to be shared outside of VertiGIS and EagleView.\n-----\n\n##### To launch the EagleView Embedded Explorer (E3), open the _I want to..._ menu and select **Open EagleView**.\n##### E3 should open in the bottom panel, to the location of the VertiGIS Studio Web (VSW) map.\n\n##### The two maps should stay in sync with one another. Try zooming, panning, rotating either map.  You should be able to close the component and reopen it.\n\n##### Known Issues:\n- ##### Popping-out the E3 component throws an error.\n- ##### Occasionally an error was thrown when using the bearing tool in E3  to rotate the view. This may be fixed. \n- ##### If the extent of the VSW map changes programmatically (e.g. user selects a bookmark), the E3 viewer may not sync with the extent change.  \n\n##### Please report any issues to [jon.swoveland@vertigis.com](jon.swoveland@vertigis.com)\n\n ![VertiGIS Studio logo](https://www.arcgis.com/sharing/rest/content/items/176b1e8474dd4fc0a4672e256459861b/data)\n\n",
         "language-designer-gen-layer-stack-title": "Layers",
         "language-designer-gen-home-container-title": "Home",
         "language-designer-gen-configure-layer-menuitemtitle": "Configure Layer",
