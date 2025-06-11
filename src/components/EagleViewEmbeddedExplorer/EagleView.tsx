@@ -118,16 +118,16 @@ export default function EagleView(props: LayoutElementProperties<EagleViewModel>
         const zoom = model.map.view.zoom - 1;
         const view = { lonLat: { lat: center.latitude, lon: center.longitude }, rotation, zoom };
 
-        const widget = hostElement.ownerDocument.getElementById("eagle-view-map");
-        if (widget == null) {
-            const container = hostElement.ownerDocument.createElement("div");
-            container.setAttribute("id", "eagle-view-map");
-            rootRef.current.appendChild(container);
-        }
-        if (ev.current != null) {
-            ev.current.destroy();
-        }
-
+        //const widget = hostElement.ownerDocument.getElementById("eagle-view-map");
+        // if (widget == null) {
+        //     const container = hostElement.ownerDocument.createElement("div");
+        //     container.setAttribute("id", "eagle-view-map");
+        //     rootRef.current.appendChild(container);
+        // }
+        // if (ev.current != null) {
+        //     ev.current.destroy();
+        // }
+        
         ev.current = hostElement.ownerDocument.defaultView.ev ? new hostElement.ownerDocument.defaultView.ev.EmbeddedExplorer() : new window.ev.EmbeddedExplorer();
         model.e3 = ev.current.mount("eagle-view-map", { apiKey: model.apiKey, view });
     };
@@ -153,7 +153,9 @@ export default function EagleView(props: LayoutElementProperties<EagleViewModel>
 
     return (
         <LayoutElement {...props} stretch>
-            <div ref={rootRef} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove} onMouseDown={handleMouseDown} onWheel={handleMouseUp} ></div>
+            <div ref={rootRef} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove} onMouseDown={handleMouseDown} onWheel={handleMouseUp} >
+                <div className="App" id="eagle-view-map"></div>
+            </div>
 
         </LayoutElement>
     );
